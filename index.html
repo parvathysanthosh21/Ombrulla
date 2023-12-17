@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ombrulla</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/5a26fb29d1.js" crossorigin="anonymous"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+<body  class="bg-gradient-to-r from-indigo-200 to-indigo-50 h-96 max-h-screen">
+    <!-- header -->
+   <div >
+<nav class="md:flex md:items-center md:justify-between">
+    <div class="flex justify-between items-center">
+        <span class=" ms-20 p-5 text-2xl font-[Poppins] cursor-pointer">
+            <img class="h-10 inline" src="./images/ombrulla_logo.png" alt="">
+            ombrulla
+        </span>
+        <span class="text-3xl cursor-pointer mx-2 md:hidden block">
+            <ion-icon name="menu" onclick="Menu(this)"></ion-icon>
+          </span>
+    </div>
+   
+    <ul class="me-20 md:flex md:items-center z-[-1] md:z-auto md:static absolute w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500">
+        <li class="mx-4 my-6 md:my-0">
+            <a href="#" class="text-base hover:text-sky-600  font-bold">Home</a>
+        </li>
+        <li class="mx-4 my-6 md:my-0">
+            <a href="#" class="text-base hover:text-sky-600 font-bold">Services</a>
+        </li>
+        <li class="mx-4 my-6 md:my-0">
+            <a href="#" class="text-base hover:text-sky-600  font-bold">Product</a>
+        </li>
+        <li class="mx-4 my-6 md:my-0">
+            <a href="#" class="text-base hover:text-sky-600  font-bold">About</a>
+        </li>
+        <li class="mx-4 my-6 md:my-0">
+            <a href="#" class="text-base hover:text-sky-600  font-bold">Blog</a>
+        </li>
+        <li class="mx-4 my-6 md:my-0">
+            <a href="#" class="text-base hover:text-sky-600 font-bold">Contact</a>
+        </li>
+        
+    </ul>
+</nav>
+<script>
+     function Menu(e){
+      let list = document.querySelector('ul');
+      e.name === 'menu' ? (e.name = "close",list.classList.add('top-[80px]') , list.classList.add('opacity-100')) :( e.name = "menu" ,list.classList.remove('top-[80px]'),list.classList.remove('opacity-100'))
+    }
+</script>
+   </div> 
+<!-- home -->
+
+<div class="container m-auto grid grid-cols-2">
+<div class="ms-48">
+    <h1 class="text-6xl font-semibold w-80  mt-28">Manual Inspection is <span class="text-blue-600"> Slow & Error-Prone</span></h1>
+    <p class="mt-8 text-base text-slate-500">AI-driven computer vision transforms manufacturing quality inspection, boosting precision and cost-efficiency while upholding product excellence.</p>
+   <div>
+       
+        <button class="mt-8 px-6 py-3 font-bold text-white bg-blue-500 border border-blue-500 rounded-full hover:text-blue-600 hover:bg-white">Schedule Call</button>
+        <button class="text-2xl ml-8 text-white px-3 py-2 rounded-full bg-blue-500 hover:bg-inherit hover:text-blue-600"><ion-icon name="play"></ion-icon></button>
+        <a class="ml-8 text-md font-bold hover:text-blue-600" href="">Watch Video</a>
+    
+   </div>
+</div>
+
+<div>
+    <img class="ml-32 mt-8 rounded-full w-96 h-96" src="./images/ombrulla-front.jpg" alt="">
+</div>
+</div>
+
+<!-- section1 -->
+
+<div style="background-image: url(./images/second-ombrulla.svg); width: 1250px; height:80vh;" class="container ms-28 mt-8 rounded-lg  w-96">
+        <div class="flex items-center justify-center flex-col">
+            <h1 class="font-bold mt-28"><ion-icon name="square" class="text-blue-600 ml-5"></ion-icon>The Best AI Service Provider</h1>
+            <h1 class="text-6xl font-semibold   ">Crafting Tomorrow's <br> World with <span class="text-blue-600">AI Excellence</span></h1>
+            <p class="mt-8 text-base text-slate-500">The majority of customers lack data-driven insights and automation. Using AI, Ombrulla assist <br>clients in extracting data from diverse sources such as photos, videos, and data lakes, which <br> can assist businesses in making data-driven insights and improving their bottom line.</p>
+            <button class="text-2xl mt-8 ml-8 text-white px-3 py-2 rounded-full bg-blue-500 hover:bg-inherit hover:text-blue-600"><ion-icon name="play"></ion-icon></button>
+            <a class="ml-8 mt-8 text-md font-bold hover:text-blue-600" href="">Watch Corporate Video</a>
+        </div>
+</div>
+
+<!-- section2 -->
+
+<div class="mt-28 m-auto grid grid-cols-2 ml-28 ">
+    <div>
+        <h1 class="font-bold mt-8 "><ion-icon name="square" class="text-blue-600 ml-5"></ion-icon>AI INFRASTRUCTURE INSPECTION</h1>
+        <h1  class="text-6xl font-semibold mt-8">Enhances Efficiency, Safety, and Cost-Effectiveness</h1>
+
+        <ul style="list-style-type:disc" class="mt-8 text-lg" >
+            <li><span class="font-bold">Cutting-Edge Solution:</span> Ombrulla leverages AI, drones, and IoT technologies to transform infrastructure inspection.</li>
+            <li><span class="font-bold">Real-Time Insights: </span>Real-time insights enhance inspection efficiency, safety, and reduce conventional challenges.</li>
+            <li><span class="font-bold">Longevity and Cost-Effectiveness:</span> Ombrulla ensures the longevity and safety of critical infrastructure while offering a cost-effective solution.</li>
+            <li><span class="font-bold">Responsive Maintenance:</span> Enhances infrastructure management, increasing reliability and responsiveness, and reducing risks.</li>
+        </ul>
+        <button class="mt-8 px-6 py-3 font-bold text-white bg-blue-500 border border-blue-500 rounded-full hover:text-blue-600 hover:bg-white">Schedule Call</button>
+        <a class="ml-8 text-md font-bold hover:text-blue-600" href="">Read More<ion-icon class="text-blue-600 -rotate-45" name="arrow-forward-outline"></ion-icon></a>
+
+    </div>
+
+    <div>
+        <img style="height: 60vh;" class="h-auto max-w-xl rounded-lg mt-20 ml-8" src="./images/ombrulla-third.webp" alt="">
+    </div>
+</div>
+
+<!-- section3 -->
+<div  class="mt-28 m-auto grid grid-cols-2 ml-20 ">
+    <div>
+        <img style="height: 60vh;" class="h-auto max-w-xl rounded-lg mt-20 ml-8" src="./images/ombrulla-fourth.webp" alt="">
+    </div>
+    <div>
+        <h1 class="font-bold mt-8 "><ion-icon name="square" class="text-blue-600 ml-5"></ion-icon>AI VISUAL INSPECTION</h1>
+        <h1  class="text-6xl font-semibold mt-8">Improving Quality with Greater Precision</h1>
+
+        <ul style="list-style-type:disc" class="mt-8 text-lg me-20" >
+            <li><span class="font-bold">Automated Defect Detection:</span>Automated visual inspection uses computer vision and machine learning to identify defects autonomously.</li>
+            <li><span class="font-bold">Advanced Image Processing : </span>It captures and enhances digital images for relevant feature extraction.</li>
+            <li><span class="font-bold">Informed Decision-Making:</span> The system classifies defects, aiding manufacturers in quality control decisions.</li>
+            <li><span class="font-bold">Real-Time Quality Assurance:</span> Integration with manufacturing enables real-time quality control and reduces substandard product risks.</li>
+        </ul>
+        <button class="mt-8 px-6 py-3 font-bold text-white bg-blue-500 border border-blue-500 rounded-full hover:text-blue-600 hover:bg-white">Schedule Call</button>
+        <a class="ml-8 text-md font-bold hover:text-blue-600" href="">Read More<ion-icon class="text-blue-600 -rotate-45" name="arrow-forward-outline"></ion-icon></a>
+
+    </div>
+
+</div>
+
+<!-- section4 -->
+<div class="mt-28 m-auto grid grid-cols-2 ml-28 ">
+    <div>
+        <h1 class="font-bold mt-8 "><ion-icon name="square" class="text-blue-600 ml-5"></ion-icon>AI DATA ANALYTICS</h1>
+        <h1  class="text-6xl font-semibold mt-8">Empowers Businesses to Make Insightful Decisions</h1>
+
+        <ul style="list-style-type:disc" class="mt-8 text-lg" >
+            <li><span class="font-bold">Actionable Insights:</span> AI data analysis enhances decisions, personalizes customer experiences and improve operations.</li>
+            <li><span class="font-bold">Increased Customer Loyalty:</span>AI predictive analytics for personalized recommendations & increased customer loyalty.</li>
+            <li><span class="font-bold">Quality Assurance:</span>AI analytics identifies and mitigates potential issues, ensuring the quality and reliability of products and services.</li>
+            <li><span class="font-bold">Efficiency and Responsiveness:</span> Customers benefit from increased efficiency, improved product quality, and more responsive interactions with businesses.</li>
+        </ul>
+        <button class="mt-8 px-6 py-3 font-bold text-white bg-blue-500 border border-blue-500 rounded-full hover:text-blue-600 hover:bg-white">Schedule Call</button>
+        <a class="ml-8 text-md font-bold hover:text-blue-600" href="">Read More<ion-icon class="text-blue-600 -rotate-45" name="arrow-forward-outline"></ion-icon></a>
+
+    </div>
+
+    <div>
+        <img style="height: 60vh;" class="h-auto max-w-xl rounded-lg mt-20 ml-8" src="./images/ombrulla-fifth.webp" alt="">
+    </div>
+</div>
+<!-- section5 -->
+<div class="container mt-8 bg-blue-600 text-white h-auto grid grid-cols-2">
+<div class="ms-20 mt-20">
+    <img class="h-5 mt-20" src="./images/petran-logo.webp" alt="">
+    <h1 class="font-bold">PErformance - TRacking - ANalytics</h1>
+    <h1 class="text-3xl font-bold mt-2">AI & IoT Enabled <br>
+        Asset Performance Management</h1>
+    <p>Petran offers an Asset Performance Management (APM) system that harnesses the power of artificial intelligence and the Internet of Things (IoT) to empower data-driven decision-making and enable proactive maintenance strategies.</p>
+    <button class="mt-8 px-6 py-3 font-bold text-white border border-white rounded-full hover:text-black">Schedule Call</button>
+    <button class="text-2xl ml-8 text-white px-3 py-2  border border-white rounded-full bg-blue-500 "><ion-icon name="play"></ion-icon></button>
+    <a class="ml-8 text-md font-bold" href="">Watch Video</a>
+</div>
+<div>
+<img style="height: 50vh; width: 550px;" class="mt-20" src="./images/ombrulla-sixth.webp" alt="">
+</div>
+</div>
+
+<!-- section6 -->
+<div class="mt-28 m-auto grid grid-cols-3 ml-20 mb-28">
+   
+    <div>
+        <h1><ion-icon name="square" class="text-blue-600 ml-5"></ion-icon>PRODUCTS</h1>
+        <h1 class="text-4xl font-semibold mt-4">Our HR Tools</h1>
+        <p class=" mt-8 text-base text-slate-700">Our job grading and evaluation tool, combined with the compensation management tool, is a highly effective SaaS-based solution. It greatly assists HR consultants and managers in carrying out their roles with efficiency and precision.</p>
+    </div>
+
+    <div class="ml-5 bg-slate-300 mb-20 flex justify-center items-center flex-col rounded-lg">
+        <h1 class="mt-8 text-2xl font-semibold">Job Grading and Evaluation</h1>
+        <p class="mt-8 text-base text-slate-700 w-80">Job evaluation assesses and ranks job roles in an organization based on responsibilities and skills, often for compensation and structuring purposes.</p>
+        <img class="h-12 mt-5" src="./images/job-profiler.webp" alt="">
+        <a class="ml-8  text-md font-bold hover:text-blue-600 mt-5" href="">Free Trail<ion-icon class="text-blue-600 -rotate-45" name="arrow-forward-outline"></ion-icon></a>
+
+    </div>
+
+    <div class="ml-5 mb-20 me-8 bg-slate-300 flex justify-center items-center flex-col rounded-lg">
+        <h1 class="mt-8 text-2xl font-semibold">Compensation Management</h1>
+        <p class="mt-8 text-base text-slate-700 w-80">Compensation management software automates salary planning, budget management, and equity analysis, ensuring fair and competitive pay practices.</p>
+        <img class="h-12 mt-5" src="./images/Comp360.webp" alt="">
+        <a class="ml-8 mb-8 text-md font-bold hover:text-blue-600 mt-5" href="">Book For Demo<ion-icon class="text-blue-600 -rotate-45" name="arrow-forward-outline"></ion-icon></a>
+
+    </div>
+
+
+</div>
+<!-- section7 -->
+<div class="flex justify-center items-center flex-col">
+    <div>
+        <h1><ion-icon name="square" class="text-blue-600 ml-5"></ion-icon> OUR COUSTOMERS<ion-icon name="square" class="text-blue-600 ml-5"></ion-icon></h1>    
+        <h1 class="text-4xl font-semibold mt-5">They Trust Us</h1>
+    </div>
+    <div>
+        
+    </div>
+</div>
+
+
+
+
+
+</body>
+</html>
